@@ -7,8 +7,8 @@ python script. By most, I would like to specify the following assumptions that n
 on any dataset.
 
 Assumptions:
-> All variables must be numerical in 'nature': Yes. Since I'm using scikit-learn package in my code, this is a 
+- All variables must be numerical in 'nature': Yes. Since I'm using scikit-learn package in my code, this is a 
 necessity. This means that all categorical/textual variables must be cleaned and coded appropriately before 
 implementation.
 
-> 
+- 
