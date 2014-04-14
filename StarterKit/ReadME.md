@@ -6,7 +6,8 @@ This would marely help you in speeding up your process of by not thinking much a
 python script. By most, I would like to specify the following assumptions that need to be satisfied before using this 
 on any dataset.
 
-Assumptions:
+Assumptions
+===========
 - All variables must be numerical in 'nature': Yes. Since I'm using scikit-learn package in my code, this is a 
 necessity. This means that all categorical/textual variables must be cleaned and coded appropriately before 
 implementation.
