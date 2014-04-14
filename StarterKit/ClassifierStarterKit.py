@@ -50,6 +50,17 @@ def splitting(X, y, testProp):
 
 
 def grid_search(trainingset, testset):
+    """
+    Reads in the following information:
+    > The training set (which is a list or tuple containing X_train & y_train
+    > The test set (which is a list or tuple containing X_test & y_test)
+    Performs the following:
+    > Creates new train-test X-y's
+    > Defines new pipelines that are just the different algorithms to be implemented
+    > Defines new parameters that are the model parameters of the corresponding algorithms
+    > Loops over these and gives the best possible score and model that each algorithm can give.
+    > Testing other parameter values than the ones below is strongly encouraged.
+    """
     X_train = trainingset[0]
     y_train = trainingset[1]
     X_test = testset[0]
@@ -107,6 +118,9 @@ def grid_search(trainingset, testset):
 
 
 def main():
+    """
+    This is a wrapper function that runs all the above functions
+    """
     reading_csv = csv_read('traintitanic.csv', 'Survived', ',')
     split = splitting(reading_csv[0], reading_csv[1], 0.15)
     griding = grid_search(split[0], split[1])
