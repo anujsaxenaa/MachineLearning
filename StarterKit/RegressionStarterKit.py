@@ -1,7 +1,4 @@
-__author__ = 'Anuj'
-
 import pandas as pd
-import os
 from sklearn import cross_validation
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
