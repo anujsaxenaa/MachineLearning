@@ -1,4 +1,4 @@
-The purpose of this starter kit is to provide a script that can be generalizable to most machine learning tasks. 
+The purpose of this starter kit is to provide a script that can be generalizable for most machine learning tasks. 
 This should not be mistaken for something that can directly be used on any dataset. Machine learning isn't that easy. 
 I made this script using many famous python packages for purposes that come after the data exploration,
 feature engineering, and understanding of the dataset is done by the researcher (probably in R or any other statistical software).
