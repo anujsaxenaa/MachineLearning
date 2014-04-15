@@ -69,28 +69,28 @@ def grid_search(trainingset, testset):
     X_test = testset[0]
     y_test = testset[1]
     pipeline1 = Pipeline((
-        ('clf', RandomForestRegressor()),
+        ('reg', RandomForestRegressor()),
     ))
 
     pipeline2 = Pipeline((
-        ('clf', LinearRegression()),
+        ('reg', LinearRegression()),
     ))
     pipeline3 = Pipeline((
-        ('clf', KNeighborsRegressor()),
+        ('reg', KNeighborsRegressor()),
     ))
     parameters1 = {
-        'clf__n_estimators': np.arange(500, 1000, 100),
-        'clf__criterion': ['mse'],
-        'clf__max_depth': [10, 5],
-        'clf__max_features': ['log2', None],
+        'reg__n_estimators': np.arange(500, 1000, 100),
+        'reg__criterion': ['mse'],
+        'reg__max_depth': [10, 5],
+        'reg__max_features': ['log2', None],
     }
     parameters2 = {
-        'clf__fit_intercept': [True, False],
+        'reg__fit_intercept': [True, False],
     }
 
     parameters3 = {
-        'clf__n_neighbors': np.arange(3, 15, 2),
-        'clf__weights': ['uniform', 'distance'],
+        'reg__n_neighbors': np.arange(3, 15, 2),
+        'reg__weights': ['uniform', 'distance'],
     }
 
     pips = [pipeline1, pipeline2, pipeline3]
