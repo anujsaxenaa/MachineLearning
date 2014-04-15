@@ -17,5 +17,7 @@ feature) should be removed. You can always hardcode this stuff too.
 
 - Should contain just one target variable column. 
 
+P.S. This is a work in progress.
+
 
 
