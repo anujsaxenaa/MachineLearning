@@ -9,9 +9,6 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.pipeline import Pipeline
 import numpy as np
 from sklearn.grid_search import GridSearchCV
-import os
-
-#os.chdir("/MSAN/MSANSpring/Clorox/citydata")
 
 
 def csv_read(filename, label_name, delimiter):
